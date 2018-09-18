@@ -1,6 +1,6 @@
 var gulp    = require('gulp'),
-gulp-sass   = require('gulp-sass'),
-gulp-watch  = require('gulp-watch');
+sass        = require('gulp-sass'),
+watch       = require('gulp-watch');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.sass')
@@ -14,4 +14,4 @@ gulp.task('watch-sass', function() {
    gulp.watch("./sass/**/*.sass", ['sass']);
   });
 
-gulp.taskÇ('default', ['watch-sass'])
+gulp.task('default', ['watch-sass'])

@@ -3,39 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,700i,900i" rel="stylesheet">
   </head>
   <body>
 
-    <h2 id="title">
+    <h2 class="title">
         Repartido de cartas aleatorias
     </h2>
 
     <div class="card-box">
-      <div class="card" id="characters">
-        <div class="front"><p>Personajes</p></div>
-        <div class="front back"></div>
+      <div class="card-box__set">
+        <div class="card-box__card" id="characters">
+          <div class="card-box__card-front"></div>
+          <div class="card-box__card-front card-box__card-back"></div>
+        </div>
+        <div class="card-box__card" id="weapons">
+          <div class="card-box__card-front"></div>
+          <div class="card-box__card-front card-box__card-back"></div>
+        </div>
+        <div class="card-box__card" id="rooms">
+          <div class="card-box__card-front"></div>
+          <div class="card-box__card-front card-box__card-back"></div>
+        </div>
+        <div class="card-box__card" id="rooms">
+          <div class="card-box__card-front"></div>
+          <div class="card-box__card-front card-box__card-back"></div>
+        </div>
+        <div class="card-box__card" id="rooms">
+          <div class="card-box__card-front"></div>
+          <div class="card-box__card-front card-box__card-back"></div>
+        </div>
       </div>
-      <div class="card" id="weapons">
-        <div class="front"><p>Armas</p></div>
-        <div class="front back"></div>
       </div>
-      <div class="card" id="rooms">
-        <div class="front"><p>Habitaciones</p></div>
-        <div class="front back"></div>
-      </div>
-    </div>
 
   <div class="buttonBox">
-    <button class="repartir">
+    <button class="buttonBox__repartir">
       Repartir
-    </button>
-    <button class="ocultar">
-      Ocultar
-    </button>
-    <button class="enseñar">
-      Enseñar
     </button>
   </div>
 

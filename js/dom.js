@@ -13,7 +13,7 @@ $(function() {
     $("#characters .back").html(misteryEnvelope[0].first_name + " " + misteryEnvelope[0].last_name);
     $("#weapons .back").html(misteryEnvelope[1].name);
     $("#rooms .back").html(misteryEnvelope[2].name);
-    $(".card").css({ WebkitTransform: 'rotateY(' + 180 + 'deg)'});
+    $(".card-box__card").css({ WebkitTransform: 'rotateY(' + 180 + 'deg)'});
     $(".repartir").html("re-repartir")
     setTimeout(function(){
       $(".card").css({ WebkitTransform: 'rotateY(' + 360 + 'deg)'});
@@ -24,7 +24,7 @@ $(function() {
   $(".ocultar").click(function() {
 
     if (check) {
-      $(".card").css({ WebkitTransform: 'rotateY(' + 360 + 'deg)'});
+      $(".card-box__card").css({ WebkitTransform: 'rotateY(' + 360 + 'deg)'});
       check = false;
     }
     else {};
@@ -33,7 +33,7 @@ $(function() {
   $(".enseñar").click(function() {
 
     if (check == false) {
-      $(".card").css({ WebkitTransform: 'rotateY(' + 180 + 'deg)'});
+      $(".card-box__card").css({ WebkitTransform: 'rotateY(' + 180 + 'deg)'});
       check = true;
     }
     else {};
